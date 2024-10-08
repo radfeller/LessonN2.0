@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head class = 'nazovik'>
+    <title>BitCalculator</title>
+    <head >
+        <style>
+@font-face {
+    font-family: "WHOA Spine Minimum";
+    src: url("https://assets.codepen.io/174183/WHOA-Variable-Spine-v0.3.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "WHOA Top Minimum";
+    src: url("https://assets.codepen.io/174183/WHOA-Variable-Top-v0.3.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: sans-serif;
+    max-width: 50rem;
+    padding: 2rem 0;
+    color: #141414;
+    background: #80c8fd;
+    display: grid;
+  }
+  
+  h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  
+  h4 span {
+    display: block;
+    cursor: url("https://assets.codepen.io/174183/spiral_1.png"), auto;
+    font-family: "WHOA Top Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-weight: normal;
+    font-size: clamp(10rem, 106.7vw - 36.7rem, 20rem);
+    position: relative;
+    line-height: 0.5;
+    margin: 0 0 0 1rem;
+  }
+  
+  h4 span::before {
+    content: "128";
+    font-family: "WHOA Spine Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+  }
+
+  h5 span {
+    display: block;
+    cursor: url("https://assets.codepen.io/174183/spiral_1.png"), auto;
+    font-family: "WHOA Top Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-weight: normal;
+    font-size: clamp(10rem, 106.7vw - 36.7rem, 20rem);
+    position: relative;
+    line-height: 0.5;
+    margin: 0 0 0 1rem;
+  }
+
+  h5 span::before {
+    content: "2";
+    font-family: "WHOA Spine Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+  }
+  
+  h4 span:hover,
+  h4 span:hover::before {
+    font-variation-settings: "hrzn" 820, "vert" -1000, "rota" 59, "zoom" 820;
+    transition: all 1000ms cubic-bezier(0.42, 0, 0.11, 1.43);
+  }
+  
+  h4 span:hover {
+    -webkit-text-stroke: 1px white;
+  }
+
+  h5 span:hover,
+  h5 span:hover::before {
+    font-variation-settings: "hrzn" 820, "vert" -1000, "rota" 59, "zoom" 820;
+    transition: all 1000ms cubic-bezier(0.42, 0, 0.11, 1.43);
+  }
+  
+  h5 span:hover {
+    -webkit-text-stroke: 1px white;
+  }
+  
+  p {
+    max-width: 60ch;
+  }
+  
+        
+            </style>
+
+        <h1>Решение Задачи Номер 9</h1>
+        <h3 >Для решения данной задачи сперва следует перевести информационный объем сообщения из килобайт в биты.</h3>
+        <h3>Поскольку в 1 кБ — 1024 байта, а в 1 байте — 8 бит, получим:</h3>
+        <h3>1/16 * (1024 * 8) = 8192 / 16 = 512 бит.</h3>
+        <h2>Находим объем одного символа в сообщении при помощи следующей формулы:</h2>
+        <h3>N = 2i</h3>
+        <h2>Поскольку алфавит содержит 16 символов, то объем одного символа составит:</h2>
+        <h3>Определяем количество символов в сообщении.</h3>
+        <h3>Для этого делим объем сообщения на объем одного символа.</h3>
+        <h3>512 / 4 = 128 символов.</h3>
+        <h3>Ответ:</h3>
+        <h4><span>128</span></h4>
+        <h3>символов</h3>
+
+        <h1>Решение задачи номер 10</h1>
+        <h3>256 * 2 = 512 символов во всём сообщении.</h3>
+        <h3>1 кбайт = 1024 байта, 1/16 кбайта = 1024 / 16 = 64 байта.</h3>
+        <h3>В одном байте 8 бит, значит 64 байта — это 64 * 8 = 512 бит информации.</h3>
+        <h3>512 / 512 = 1 бит информации на символ.</h3>
+        <h3>Мощность алфавита = 2 в степени количества информации на символ, то есть 2 в первой, или просто </h3>
+        <h5><span>2</span></h5>
+    </head>
+
+
+</head>
+<body id="ContentGame">
+
+    <script src="main.js"></script>    
+</body>
+</html>
